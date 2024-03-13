@@ -8,7 +8,7 @@ class PantallaIni_1222 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Pagina Inicial Gomez1222"),
-        backgroundColor: Colors.indigo,
+        backgroundColor: Color(0xffec3427),
       ),
       body: Center(
         child: Column(
@@ -17,13 +17,24 @@ class PantallaIni_1222 extends StatelessWidget {
             ElevatedButton(
                 onPressed: () {
                   Navigator.pushNamed(context, "/Pantalla1_1222");
-                }, //Fin de onpressed
-                child: const Text("Ejemplo Card")),
+                },
+                style: ElevatedButton.styleFrom(
+                    backgroundColor: Color(0xff54ae58)), //Fin de onpressed
+                child: const Text("Mover a Pantalla 1")),
             ElevatedButton(
                 onPressed: () {
                   Navigator.pushNamed(context, "/Pantalla2_1222");
-                }, //Fin de onpressed
+                },
+                style: ElevatedButton.styleFrom(
+                    backgroundColor: Color(0xff285dd0)), //Fin de onpressed
                 child: Text("Mover a pantalla 2")),
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, "/Pantalla3_1222");
+                },
+                style: ElevatedButton.styleFrom(
+                    backgroundColor: Color(0xffb246f9)), //Fin de onpressed
+                child: Text("Mover a pantalla 3")),
           ], //Fin de niños
         ),
       ),

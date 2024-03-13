@@ -10,28 +10,21 @@ class Pantalla2_1222 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Pantalla 2 Gomez1222'),
-        backgroundColor: Colors.purple,
+        backgroundColor: Color(0xffe18bf1),
       ),
       body: Center(
         child: Container(
-          color: Colors.blueAccent,
-          width: double.infinity,
-          height: 300,
-          child: Card(
-            color: Colors.amber,
-            margin: EdgeInsets.all(32),
-            child: Padding(
-              padding: EdgeInsets.all(50),
-              child: Text(
-                'Tarjeta 2 Gomez',
-                style: TextStyle(
-                  fontSize: 30,
-                  color: Colors.blue,
-                  fontWeight: FontWeight.bold,
-                ),
-                textAlign: TextAlign.center,
-              ),
-            ),
+          color: Color(0xff89e88c),
+          constraints: BoxConstraints(
+            minHeight: 100,
+            minWidth: 200,
+            maxHeight: 300,
+            maxWidth: 350,
+          ),
+          child: Text(
+            'Pantalla 2 Gomez1222',
+            style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+            textAlign: TextAlign.center,
           ),
         ),
       ),

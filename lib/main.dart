@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gomez1222/pantalla2_1222.dart';
 import 'package:gomez1222/pantalla1_1222.dart';
 import 'package:gomez1222/pantallaini_1222.dart';
+import 'package:gomez1222/pantalla3_1222.dart';
 
 void main() => runApp(MiApp1222());
 
@@ -17,6 +18,7 @@ class MiApp1222 extends StatelessWidget {
         "/": (context) => PantallaIni_1222(),
         "/Pantalla1_1222": (context) => Pantalla1_1222(),
         "/Pantalla2_1222": (context) => Pantalla2_1222(),
+        "/Pantalla3_1222": (context) => Pantalla3_1222(),
       }, //Fin ruta paginas
     ); //Fin de material
   } //Fin widget
