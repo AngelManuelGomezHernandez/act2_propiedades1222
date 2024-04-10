@@ -10,24 +10,52 @@ class Pantalla1_1222 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Pantalla 1 Gomez1222'),
-        backgroundColor: Color(0xff077a6b),
+        backgroundColor: Color(0xff1bd3d9),
       ),
       body: Center(
-        child: Container(
-          color: Color(0xff60e5fd),
-          width: 300,
-          height: 300,
-          padding: EdgeInsets.all(32),
-          margin: EdgeInsets.symmetric(vertical: 16, horizontal: 32),
-          alignment: Alignment.center,
-          child: Text(
-            'Angel Gomez 1222',
-            style: TextStyle(
-                fontSize: 30,
-                fontWeight: FontWeight.bold,
-                color: Color(0xff1f78ff)),
-            textAlign: TextAlign.center,
-          ),
+        child: Column(
+          children: [
+            Text(
+              'Angel Gomez Aterrizando',
+              style: TextStyle(
+                fontSize: 38,
+                color: Color(0xFF04589A),
+              ),
+            ),
+            Align(
+              alignment: Alignment.topCenter,
+              child: Container(
+                margin: EdgeInsets.only(top: 20),
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  border: Border.all(
+                    color: Color(0xffd42a13),
+                    width: 10,
+                  ),
+                ),
+                width: 280,
+                height: 280,
+                alignment: Alignment.center,
+                child: Text(
+                  'AG',
+                  style: TextStyle(
+                    fontSize: 180,
+                    color: Color(0xffff1100),
+                  ),
+                ),
+              ),
+            ),
+            Align(
+                child: Container(
+              child: Text(
+                'Angel Manuel Gomez Hernandez 1222',
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Color(0xff000000),
+                ),
+              ),
+            ))
+          ],
         ),
       ),
     );

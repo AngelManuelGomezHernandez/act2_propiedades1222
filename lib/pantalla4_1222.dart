@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-class Pantalla3_1222 extends StatelessWidget {
-  const Pantalla3_1222({Key? key}) : super(key: key);
+class Pantalla4_1222 extends StatelessWidget {
+  const Pantalla4_1222({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Pantalla 3 Gomez1222'),
-        backgroundColor: Color(0xffff8f24),
+        title: Text('Pantalla 4 Gomez1222'),
+        backgroundColor: Color(0xfffbb8d9),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
