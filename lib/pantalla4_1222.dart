@@ -14,39 +14,37 @@ class Pantalla4_1222 extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Container(
-            margin: EdgeInsets.all(40),
-            width: 300,
-            height: 90,
-            alignment: Alignment.centerLeft,
+            margin: EdgeInsets.all(30),
+            height: 160,
             decoration: BoxDecoration(
-              color: Color(0xff894afd), //blue
-              borderRadius: BorderRadius.circular(45),
-            ),
-            child: Container(
-              width: 210,
-              height: 90,
-              decoration: BoxDecoration(
-                color: Color(0xffb794f9), //light blue
-                borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(45),
-                  bottomLeft: Radius.circular(45),
-                ),
+              borderRadius: BorderRadius.circular(20),
+              gradient: new LinearGradient(
+                colors: [
+                  Color(0xffb7fda9),
+                  Color(0xfffeff8d),
+                ],
+                begin: Alignment.centerLeft,
+                end: Alignment.centerRight,
+                stops: [0.25, 0.90],
               ),
-              alignment: Alignment.center,
-              child: Text(
-                'Reto',
-                style: TextStyle(
-                  fontSize: 32,
-                  color: Colors.white,
+              boxShadow: [
+                BoxShadow(
+                  color: Color(0xff76a46a),
+                  offset: Offset(-12, 12),
+                  blurRadius: 8,
                 ),
-              ),
+              ],
             ),
-          ),
-          Text(
-            'Angel Manuel Gomez Hernandez 1222',
-            style: TextStyle(
-              fontSize: 20,
-              color: Colors.black,
+            alignment: Alignment.centerLeft, //to align its child
+            padding: EdgeInsets.all(20),
+            child: Text(
+              'Angel 1222',
+              style: TextStyle(
+                fontSize: 46,
+                color: Color(0xff000000),
+                fontWeight: FontWeight.w200,
+                fontStyle: FontStyle.italic,
+              ),
             ),
           ),
         ],
